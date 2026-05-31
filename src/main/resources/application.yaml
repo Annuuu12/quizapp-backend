@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: quizapp
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/questiondb
+    username: postgres
+    password: CHANGE_ME
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
